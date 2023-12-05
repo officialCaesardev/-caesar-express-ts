@@ -1,11 +1,11 @@
-import { Request, Response, NextFunction } from 'express';
-import { AppError } from '@/utils/AppError';
+import { Request, Response, NextFunction } from "express";
+import { AppError } from "@/utils/AppError";
 
 const errorHandleMiddleware = (
   err: Error,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   if (err instanceof AppError) {
     res.status(err.statusCode).json({
@@ -15,9 +15,9 @@ const errorHandleMiddleware = (
     });
   } else {
     res.status(500).json({
-      status: 'error',
+      status: "error",
       statusCode: 500,
-      message: 'Something went wrong',
+      message: "Something went wrong",
     });
   }
 };
