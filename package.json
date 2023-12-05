@@ -3,14 +3,32 @@
   "version": "1.0.0",
   "description": "Secure Express.js setup with TypeScript.",
   "main": "src/index.ts",
+  "bin": "./bin/cli/js",
   "scripts": {
     "build": "rimraf dist && npx tsc && npx tsc-alias -p tsconfig.json",
     "prestart": "npm run build",
     "start": "node dist/index.js",
     "dev": "nodemon"
   },
-  "author": "Caeasr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/officialCaesardev/-caesar-express-ts.git"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "starter-pack",
+    "secure",
+    "express",
+    "js",
+    "setup"
+  ],
+  "author": "caeasr",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/officialCaesardev/-caesar-express-ts/issues"
+  },
+  "homepage": "https://github.com/officialCaesardev/-caesar-express-ts#readme",
   "dependencies": {
     "chalk": "4.1.2",
     "cors": "^2.8.5",
