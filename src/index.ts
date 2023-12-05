@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -22,8 +22,5 @@ app.use('/', router);
 router.use(errorHandleMiddleware);
 
 app.listen(port, () => {
-  console.log(
-    `Server is Fire at`,
-    chalk.blue(`${protocol}://${domain}:${port}`)
-  );
+  console.log(`Server is Fire at`, chalk.blue(`${protocol}://${domain}:${port}`));
 });

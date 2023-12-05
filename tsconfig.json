@@ -5,6 +5,7 @@
     "rootDir": "./src",
     "baseUrl": "./src",
     "outDir": "./dist",
+
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -15,5 +16,6 @@
       "@/*": ["./*"],
       "@/type": ["./types/type.d.ts"]
     }
-  }
+  },
+  "include": ["src/**/*", ".eslintrc.js"]
 }
