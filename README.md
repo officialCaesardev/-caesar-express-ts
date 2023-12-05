@@ -1,5 +1,13 @@
 # @caesar/express-ts
 
-Welcome to the @caesar/express-ts starter package! This package is designed for those who require an Express.js setup with TypeScript, prioritizing enhanced security. I've implemented the Express Router and TS config Path, along with various other features.
+## Welcome to @caesar/express-ts Starter Package!
 
-Check it out!
+Explore our Express.js setup with TypeScript, focusing on elevated security measures. This starter package incorporates essential features such as the Express Router and TS config Path to streamline your development process.
+
+### Commands
+
+- `npm run dev`: Run the server in development mode.
+- `npm run start`: Start the built server.
+- `npm run build`: Build the Express app.
+
+Feel free to dive in and enhance your web development journey!
